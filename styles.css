@@ -8,9 +8,25 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 93.75%;
+}
+
 body{
     background: #F0F2F5;
     font-family: 'Poppins', sans-serif;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 .container{
@@ -23,6 +39,24 @@ h2{
     margin-bottom: 0.8rem;
     color: var(--dark-blue);
     font-weight: 400;
+}
+
+
+a{
+    color: #49aa26;
+    text-decoration: none;
+}
+
+a:hover{
+
+    color: #3dd705;
+
+}
+
+.button.new{
+
+    display: inline-block;
+    margin-bottom: .8rem;
 }
 
 header{
@@ -60,6 +94,9 @@ header{
 
     font-weight: normal;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -78,9 +115,11 @@ header{
 }
 
 #data-table {
+    display: block;
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
+    overflow-x: auto;  /* quando algo tiver transbordando a pagina */
 }
 
 table td{
@@ -112,6 +151,12 @@ table thead tr th:first child,
         border-radius: 0.25rem 0 0 0.25rem;
     }
 
+    table thead tr th:last-child, 
+    table tbody tr td:last-child{
+
+        border-radius: 0 0.25rem 0.25rem 0;
+    }
+
     td.description{
         color: var(--dark-blue)
     }
@@ -136,3 +181,16 @@ footer{
     color: var(--dark-blue);
     opacity: 0.6;
 }
+
+/* responsive ------------------------------- */
+@media (min-width: 800px){
+
+    html{
+        font-size: 87.5%;
+    }
+    #balance{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+} 
