@@ -114,9 +114,10 @@ header{
 
 }
 
-#transaction{
+#transactions{
     display: block;
-    overflow-x: auto;  /* quando algo tiver transbordando a pagina */
+    width: 100%;
+    overflow-x: auto; /* quando algo tiver transbordando a pagina */
 }
 
 #data-table {
@@ -207,7 +208,7 @@ table thead tr th:first child,
     max-width: 500px;
 }
 
-.form{
+#form{
     max-width: 500px
 }
 
@@ -232,6 +233,12 @@ table thead tr th:first child,
 .input-group small{
 
     opacity: 0.4;
+}
+
+.input-group.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer{
