@@ -17,22 +17,12 @@ const Dark = {
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bodyclass dark">
+<body class="bodyclass">
 
 
     <header>
         <img src="./assets/logo.svg">
-        <div id="checkbox-position">
-            <input  type="checkbox" 
-                    class="checkbox"
-                    id="checkbox"
-                    onclick="Dark.changeColor()">
-
-            <label for="checkbox" class="label">
-                <div class="ball"></div>
-            </label>
-
-        </div>
+        
     </header>
 
     <main class="container">
@@ -46,7 +36,7 @@ const Dark = {
                     <span>Entradas</span>
                     <img src="./assets/income.svg" alt="imagem de entradas">
                 </h3>
-                <p id="incomeDisplay">R$ 5.000,00</p>
+                <p id="incomeDisplay">R$ 0,00</p>
             </div>
 
             <div class="card">
@@ -54,14 +44,14 @@ const Dark = {
                     <span>Saídas</span>
                     <img src="./assets/expense.svg" alt="imagem de saidas">
                 </h3>
-                <p id="expenseDisplay">R$ 2.000,00</p>
+                <p id="expenseDisplay">R$ 0,00</p>
             </div>
             <div class="card total">
                 <h3>
                     <span>Total</span>
                     <img src="./assets/total.svg" alt="imagem do total">
                 </h3>
-                <p id="totalDisplay">R$ 3.000,00</p>
+                <p id="totalDisplay">R$ 0,00</p>
             </div>
 
         </section>
@@ -93,7 +83,7 @@ const Dark = {
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
-                <form action="">
+                <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label class="sr-only" for="description">Descrição</label>
                         <input type="text" id="description" name="description" placeholder="Descrição"/>

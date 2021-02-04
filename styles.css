@@ -243,6 +243,8 @@ table thead tr th:first child,
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 999;
 }
 
 .modal-overlay.active{
@@ -256,6 +258,8 @@ table thead tr th:first child,
     width: 90%;
     max-width: 500px;
     border-radius: 15px ;
+    position: relative;
+    z-index: 1;
 }
 
 #form{
