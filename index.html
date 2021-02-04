@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-const Dark = {
- changeColor() {
- document.querySelector('bodyclass')
- this.classList.toggle('dark')
-  }
-}
-</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +9,22 @@ const Dark = {
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bodyclass">
+<body>
 
 
     <header>
         <img src="./assets/logo.svg">
-        
+        <div id="checkbox-position">
+            <input  type="checkbox" 
+                    class="checkbox"
+                    id="checkbox"
+                    onclick="Dark.changeColor()">
+
+            <label for="checkbox" class="label">
+                <div class="ball"></div>
+            </label>
+
+        </div>
     </header>
 
     <main class="container">
@@ -115,8 +117,6 @@ const Dark = {
     </footer>
 
 <script src="./scripts.js">
-
-   
 </script>
 </body>
 

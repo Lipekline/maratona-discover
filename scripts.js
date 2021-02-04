@@ -12,7 +12,13 @@ const Modal = {
 
     document.querySelector('.modal-overlay')
     .classList.remove('active')
+    }
+}
 
+const Dark = {
+    changecolor(){
+        document.querySelector('.container')
+        .classList.toggle('dark')
     }
 }
 const Storage = {

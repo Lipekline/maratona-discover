@@ -3,10 +3,10 @@
     --green: #49aa26;
     --light-green: #3dd705;
     --body-color: #F0F2F5;
-}
 
-.dark:root{
-    --bodycolor: #1a1a1a;
+  --dark-text: #f7f7f7;
+  --dark-bg: #222430;
+  --dark-theme: #bd93f9;
 }
 
 *{
