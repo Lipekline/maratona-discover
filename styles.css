@@ -24,10 +24,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.bodyclass.dark{
-
-    background: #1a1a1a;
-}
 
 .sr-only{
     position: absolute;
@@ -45,6 +41,7 @@ body{
     width: min(90vw, 800px);
     margin: auto;
 }
+
 
 h2{
     margin-top: 3.2rem;

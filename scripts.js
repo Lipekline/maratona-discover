@@ -17,8 +17,12 @@ const Modal = {
 
 const Dark = {
     changecolor(){
-        document.querySelector('.container')
-        .classList.toggle('dark')
+        for (let i = 0; i < document.querySelectorAll(".container").length; i++) {
+            document.querySelectorAll(".container")[i].addEventListener("click", function() {
+          
+              this.classList.toggle("dark");
+            });
+          }
     }
 }
 const Storage = {
