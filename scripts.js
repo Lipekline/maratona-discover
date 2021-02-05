@@ -15,7 +15,7 @@ const Modal = {
     }
 }
 
-
+// dark mode trocando variaveis do css --------------------------------------------
 const toggleSwitch = document.querySelector('#checkbox-position input[type="checkbox"]');
 
 function switchTheme(e) {
