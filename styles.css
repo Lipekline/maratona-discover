@@ -1,4 +1,5 @@
 :root{
+    transition: .6s;
     --dark-blue: #363f56;
     --green: #49aa26;
     --light-green: #3dd705;
@@ -29,6 +30,7 @@ html{
 body{
     background: var(--bg);
     font-family: 'Poppins', sans-serif;
+    transition: .6s;
 }
 
 
@@ -114,6 +116,7 @@ header{
     background:  var(--tech-purple);
     padding: 2rem 0rem 10rem;
     text-align: center;
+    transition: .6s;
 }
 
 #logo{
@@ -138,6 +141,7 @@ header{
     border-radius: 1.5rem;
     margin-bottom: 2rem;
     color: var(--dark-blue);
+    transition: .6s;
 }
 
 .card h3{
@@ -180,6 +184,7 @@ table td{
     
     background: var(--table);
     padding: 1rem 2rem;
+    transition: .6s;
 
 }
 table td img{
@@ -200,6 +205,7 @@ table th{
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
+    transition: .6s;
 
 }
 
@@ -312,6 +318,7 @@ footer{
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
     opacity: 0.6;
+    transition: .6s;
 }
 
 /* responsive ------------------------------- */
