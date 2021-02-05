@@ -15,16 +15,21 @@ const Modal = {
     }
 }
 
-const Dark = {
-    changecolor(){
-        for (let i = 0; i < document.querySelectorAll(".container").length; i++) {
-            document.querySelectorAll(".container")[i].addEventListener("click", function() {
-          
-              this.classList.toggle("dark");
-            });
-          }
+
+const toggleSwitch = document.querySelector('#checkbox-position input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
     }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
 }
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+
 const Storage = {
     get(){
         return JSON.parse(localStorage.getItem('dev.finaces:transactions')) 

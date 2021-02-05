@@ -2,11 +2,18 @@
     --dark-blue: #363f56;
     --green: #49aa26;
     --light-green: #3dd705;
-    --body-color: #F0F2F5;
-
-  --dark-text: #f7f7f7;
-  --dark-bg: #222430;
-  --dark-theme: #bd93f9;
+    --bg: #F0F2F5;
+    --tech-purple: #744fc6;
+    --card: #fff;
+    --table: #fff;
+}
+[data-theme="dark"] {
+    --bg: #1a1a1a;
+    --tech-purple: #0d0d0d;
+    --light-green: #e1e1ff;
+    --dark-blue: #e6e6e6;
+   --card: #000;
+   --table: #333333;
 }
 
 *{
@@ -20,7 +27,7 @@ html{
 }
 
 body{
-    background: var(--body-color);
+    background: var(--bg);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -58,7 +65,7 @@ a{
 
 a:hover{
 
-    color: #3dd705;
+    color: var(--light-green);
 
 }
 
@@ -82,7 +89,7 @@ button{
 
 button:hover{
     color: white;
-    background: #744fc6;
+    background: var(--tech-purple);
 }
 
 .button.cancel{
@@ -104,7 +111,7 @@ button:hover{
 
 header{
 
-    background:  #744fc6;
+    background:  var(--tech-purple);
     padding: 2rem 0rem 10rem;
     text-align: center;
 }
@@ -126,7 +133,7 @@ header{
 }
 
 .card{
-    background: #fff;
+    background: var(--card);
     padding: 1.5rem 2rem;
     border-radius: 1.5rem;
     margin-bottom: 2rem;
@@ -171,7 +178,7 @@ header{
 
 table td{
     
-    background: #fff;
+    background: var(--table);
     padding: 1rem 2rem;
 
 }
@@ -189,7 +196,7 @@ table tbody tr:hover{
 
 table th{
 
-    background: #fff;
+    background: var(--table);
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
@@ -250,7 +257,7 @@ table thead tr th:first child,
 }
 
 .modal{
-    background:  #f0f2f5;
+    background:  var(--bg);
     padding: 2.4rem;
     width: 90%;
     max-width: 500px;
